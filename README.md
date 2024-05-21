@@ -1,5 +1,5 @@
 - 强烈建议开启bbr加速，可大幅加快节点reality和vmess节点的速度
-- 安装完成后终端输入 mianyang 可再次调用本脚本
+- 安装完成后终端输入 liki 可再次调用本脚本
 
 
 # 新增功能（排序从新到旧）
@@ -35,15 +35,6 @@ bash <(curl -fsSL https://github.com/likilu2002/sing-box-reality-hysteria2/raw/m
 - 支持warp，任意门，ss解锁流媒体
 - 支持任意门中转
 - 支持端口跳跃
-
-### warp自定义解锁功能
-![](https://img.mareep.net/blog/2023/12/d6fbf369c96dbabb160e67f76dac0d6d.jpg)
-
-
-## Credit
-- [sing-box-example](https://github.com/chika0801/sing-box-examples)
-- [sing-reality-box](https://github.com/deathline94/sing-REALITY-Box)
-- [sing-box](https://github.com/SagerNet/sing-box)
 
 
 ## 尝鲜区

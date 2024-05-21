@@ -1571,7 +1571,7 @@ if [ -f "/root/sbox/sbconfig_server.json" ] && [ -f "/root/sbox/config" ] && [ -
           ;;
       5)
           enable_bbr
-          mianyang
+          liki
           exit 0
           ;;
       6)

@@ -111,12 +111,12 @@ install_pkgs() {
   done
 }
 install_shortcut() {
-  cat > /root/sbox/mianyang.sh << EOF
+  cat > /root/sbox/liki.sh << EOF
 #!/usr/bin/env bash
-bash <(curl -fsSL https://github.com/mianayang/sing-box-reality-hysteria2/raw/main/beta.sh) \$1
+bash <(curl -fsSL https://github.com/likilu2002/sing-box-reality-hysteria2/raw/main/beta.sh) \$1
 EOF
-  chmod +x /root/sbox/mianyang.sh
-  ln -sf /root/sbox/mianyang.sh /usr/bin/mianyang
+  chmod +x /root/sbox/liki.sh
+  ln -sf /root/sbox/liki.sh /usr/bin/liki
 
 }
 reload_singbox(){
@@ -909,8 +909,8 @@ uninstall_singbox() {
     # Remove configuration and executable files
     rm -f /root/sbox/sbconfig_server.json
     rm -f /root/sbox/sing-box
-    rm -f /usr/bin/mianyang
-    rm -f /root/sbox/mianyang.sh
+    rm -f /usr/bin/liki
+    rm -f /root/sbox/liki.sh
     rm -f /root/sbox/cloudflared-linux
     rm -f /root/sbox/self-cert/private.key
     rm -f /root/sbox/self-cert/cert.pem
@@ -1532,7 +1532,7 @@ echo ""
 #install pkgs
 install_pkgs
 # Check if reality.json, sing-box, and sing-box.service already exist
-if [ -f "/root/sbox/sbconfig_server.json" ] && [ -f "/root/sbox/config" ] && [ -f "/root/sbox/mianyang.sh" ] && [ -f "/usr/bin/mianyang" ] && [ -f "/root/sbox/sing-box" ] && [ -f "/etc/systemd/system/sing-box.service" ]; then
+if [ -f "/root/sbox/sbconfig_server.json" ] && [ -f "/root/sbox/config" ] && [ -f "/root/sbox/liki.sh" ] && [ -f "/usr/bin/liki" ] && [ -f "/root/sbox/sing-box" ] && [ -f "/etc/systemd/system/sing-box.service" ]; then
     echo ""
     warning "sing-box-reality-hysteria2已安装"
     show_status
@@ -1828,7 +1828,7 @@ if /root/sbox/sing-box check -c /root/sbox/sbconfig_server.json; then
     systemctl restart sing-box
     install_shortcut
     show_client_configuration
-    hint "输入mianyang,打开菜单"
+    hint "输入liki,打开菜单"
 else
     error "check sing-box server config profile error!"
 fi
